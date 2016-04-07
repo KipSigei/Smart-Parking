@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="Smart_Parking.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Smart_Parking"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:drawerLayout="using:DrawerLayout" 
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,12,574" Grid.RowSpan="2">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Smart Parking" Height="71" Margin="0,0,-0.167,0" FontSize="48" Foreground="DeepSkyBlue" FontFamily="Segoe WP"/>
+
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,96,12,0" d:LayoutOverrides="TopPosition, BottomPosition">
+            <Grid HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="168" Margin="10,0,0,0" Background="DeepSkyBlue" Tapped="booking_Tapped">
+                <Image x:Name="image" Margin="0,10,40,37" d:LayoutOverrides="LeftMargin, RightMargin, TopPosition, BottomPosition" Source="Assets/appbar.transit.car.png" HorizontalAlignment="Right" Width="95"/>
+                <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Booking" VerticalAlignment="Bottom" Height="32" Margin="8,0,9,0" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" FontSize="24" FontFamily="Segoe WP Black"/>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Height="148" VerticalAlignment="Top" Width="168" Margin="0,0,10,0" d:LayoutOverrides="LeftMargin, RightMargin" Background="DeepSkyBlue" Tapped="map_Tapped">
+                <Image x:Name="image1" Margin="36,10,35,36" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" Source="Assets/appbar.map.gps.png"/>
+                <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Map" VerticalAlignment="Top" Height="31" Margin="10,117,10,0" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" FontFamily="Segoe WP Black" FontSize="24"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Width="168" Height="148" Margin="10,175,0,211" Background="DeepSkyBlue" d:LayoutOverrides="TopMargin, BottomMargin, TopPosition, BottomPosition">
+                <Image x:Name="image2" Margin="32,10,36,38" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Source="Assets/appbar.billing.png"/>
+                <TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Billing" VerticalAlignment="Bottom" Height="33" Margin="10,0" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin, LeftPosition, RightPosition" FontFamily="Segoe WP Black" FontSize="24"/>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Width="168" Height="148" Margin="0,175,10,211" d:LayoutOverrides="LeftMargin, RightMargin, TopPosition, BottomPosition" Background="DeepSkyBlue">
+                <Image x:Name="image3" Margin="32,10,36,48" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" Source="Assets/appbar.people.profile.png"/>
+                <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="Account" VerticalAlignment="Bottom" Height="33" Margin="10,0,9,0" d:LayoutOverrides="LeftPosition, RightPosition" FontFamily="Segoe WP Black" FontSize="24"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Width="168" Height="148" VerticalAlignment="Bottom" Margin="10,0,0,33" d:LayoutOverrides="TopMargin, BottomMargin" Background="DeepSkyBlue">
+                <Image x:Name="image4" Margin="35,10,33,48" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" Source="Assets/appbar.page.search.png"/>
+                <TextBlock x:Name="textBlock5" TextWrapping="Wrap" Text="Search" VerticalAlignment="Bottom" Height="30" Margin="10,0,9,0" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" FontFamily="Segoe WP Black" FontSize="24"/>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Height="148" VerticalAlignment="Bottom" Width="168" Margin="0,0,10,33" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" Background="DeepSkyBlue">
+                <Image x:Name="image5" Margin="32,10,36,48" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" Source="Assets/appbar.information.circle.png"/>
+                <TextBlock x:Name="textBlock6" TextWrapping="Wrap" Text="Info" VerticalAlignment="Bottom" Height="29" Margin="10,0,9,0" d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition" FontFamily="Segoe WP Black" FontSize="24"/>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>
