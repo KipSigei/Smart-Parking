@@ -5,13 +5,23 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart Parking", "Smart Parking\Smart Parking.csproj", "{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Smart Parking", "Smart Parking", "{A50F6A0D-03DD-43FE-850B-D4A4B02BA11D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Smart Parking.Shared", "Smart Parking.Shared\Smart Parking.Shared.shproj", "{94FAD97D-5139-45B6-A4D8-70F9BB569B11}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Smart Parking.Shared\Smart Parking.Shared.projitems*{94fad97d-5139-45b6-a4d8-70f9bb569b11}*SharedItemsImports = 13
+		Smart Parking.Shared\Smart Parking.Shared.projitems*{85087dc6-9a9b-470a-b2bc-6c9a68efe31b}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -21,6 +31,9 @@ Global
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|ARM.ActiveCfg = Debug|ARM
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|ARM.Build.0 = Debug|ARM
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x64.Build.0 = Debug|Any CPU
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x64.Deploy.0 = Debug|Any CPU
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x86.ActiveCfg = Debug|x86
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x86.Build.0 = Debug|x86
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Debug|x86.Deploy.0 = Debug|x86
@@ -30,11 +43,18 @@ Global
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|ARM.ActiveCfg = Release|ARM
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|ARM.Build.0 = Release|ARM
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|ARM.Deploy.0 = Release|ARM
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x64.ActiveCfg = Release|Any CPU
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x64.Build.0 = Release|Any CPU
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x64.Deploy.0 = Release|Any CPU
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x86.ActiveCfg = Release|x86
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x86.Build.0 = Release|x86
 		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85087DC6-9A9B-470A-B2BC-6C9A68EFE31B} = {A50F6A0D-03DD-43FE-850B-D4A4B02BA11D}
+		{94FAD97D-5139-45B6-A4D8-70F9BB569B11} = {A50F6A0D-03DD-43FE-850B-D4A4B02BA11D}
 	EndGlobalSection
 EndGlobal
